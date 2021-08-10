@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            left: auto;
+            margin: 30px;
+            align-content: center;
+        }
+        #pn {
+
+        }
+        input[type=submit],input[type=reset],input[type=button] {
+            float:right;
+           
+            margin-inline:20px;
+            width: fit-content;
+        }
+
+        input {
+            width: 400px;
+            height: 40px;
+        }
+        th{
+            float:left;
+            font:large;
+            column-span:all;
+        }
+        td{
+            padding:20px;
+           
+        }
+        div{
+            width:100%;
+            height:60px;
+            background-color:cornflowerblue;
+            align-content:center;
+            align-items:center;
+            color:white;
+            font:300;
+        }
+    </style>
+</head>
+<body>
+    <div><p>MUM Golden Dome Market ::: SRM System          |   Products   |   Supplier                            <input id="Button1" type="button" value="Sign Out" /> </div>
+    <form action="submit" name="New Product Form">
+        <table>
+            <tr><th>New Product Form</th></tr>
+            <tr>
+                <td>
+                    <label for="pn ">Product Number </label>
+                    <input id="pn " type="text" />
+                </td>
+                <td>
+                    <label for="quantity ">Quantity </label>
+                    <input id="quantity " type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> Name</label>
+                    <input id="name" type="text" />
+                </td>
+
+                <td>
+                    <label for="su ">Supplier </label>
+                    <input id="su " type="text" />
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="up "> Unit Price</label>
+                    <input id="up " type="number" placeholder="0.0" />
+                </td>
+                <td>
+                    <label for=" ds"> Date Supplied</label>
+                    <input id=" ds" type="date" />
+                </td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input id="Submit1" type="submit" value="Add Product" />
+
+                    <input id="cancel" type="button" value="Cancel" />
+                    <input id="Reset1" type="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+    grid-area: header;
+    background-color:cornflowerblue;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+}
+.menu {
+    display: flex;
+    background-color: darkslategrey;
+    
+}
+    .menu > div {
+        grid-area: menu;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+/* The grid container */
+@media (min-width: 601px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu menu menu menu menu menu'
+            'left left middle middle right right'
+            'footer footer footer footer footer footer';
+        /* grid-column-gap: 10px; - if you want gap between the columns */
+    }
+}
+.left,
+.middle,
+.right {
+    
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+    /* Style the left column */
+.left {
+    background-color: #bbb;
+    grid-area: left;
+}
+
+    /* Style the middle column */
+.middle {
+    background-color: #ccc;
+    grid-area: middle;
+}
+
+    /* Style the right column */
+.right {
+    background-color: #aaa;
+    grid-area: right;
+}
+
+    /* Style the footer */
+    .footer {
+        grid-area: footer;
+        background-color: darkslategrey;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Responsive layout - makes the mobile viewr */
+    @media (max-width: 600px) {
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu menu menu menu menu menu menu'
+                'left left left right right right'
+                'middle middle middle middle middle middle'
+                'footer footer footer footer footer footer';
+        }
+    }

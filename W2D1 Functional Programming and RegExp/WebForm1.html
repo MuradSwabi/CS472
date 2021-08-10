@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            left:auto;
+            margin:30px;
+            align-content:center;
+            
+        }
+        input[type=submit] {
+            width: fit-content;
+        }
+        input {
+            width: 400px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="get">
+
+        <label for="Url">Web URL</label>
+        <input id="Url" type="url" pattern="http://.*" title="Musht containt  http:// or https://" />
+        <label for="email">Email Address</label>
+        <input id="email" type="email" pattern="@.*" />
+        <label for="email">we will never share your information</label>
+        <label for="password">Password</label>
+        <input id="password" type="text" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters" />
+        <input id="Checkbox1" type="checkbox" value="Check me out" name="Check me out" />
+        
+            <input id="Submitbtn" type="submit" value="Submit" />
+</form>
+</body>
+</html>
