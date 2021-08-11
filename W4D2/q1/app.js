@@ -25,4 +25,5 @@ app.get("/list", (req, res) => {
     res.render("list", { list: list });
 });
 
+// port listining
 app.listen(3000);

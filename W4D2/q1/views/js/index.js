@@ -16,6 +16,7 @@ $(() => {
         const data = {
             fname: $("#fname").val(),
             lname: $("#lname").val(),
+            atime: $("#atime").val(),
             food: $("#food").val(),
         };
         $.post({
